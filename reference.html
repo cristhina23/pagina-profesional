@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Fit Club | Elite Performance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;family=Archivo+Black&amp;family=Space+Grotesk:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#D9FF00", // Lime Green accent
+                        "background-light": "#F8F8F8",
+                        "background-dark": "#0A0A0A",
+                        "card-dark": "#141414",
+                    },
+                    fontFamily: {
+                        display: ["Archivo Black", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        mono: ["Space Grotesk", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .italic-heading {
+            font-style: italic;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(217, 255, 0, 0.3);
+        }
+        .border-glow {
+            box-shadow: 0 0 15px rgba(217, 255, 0, 0.2);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-body selection:bg-primary selection:text-black">
+<nav class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-white/10 px-4 py-4">
+<div class="max-w-screen-xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary fill-current">bolt</span>
+<span class="font-display text-xl uppercase tracking-tighter italic">The Fit Club</span>
+</div>
+<button class="bg-primary text-black font-display text-[10px] px-4 py-2 rounded-full uppercase hover:scale-105 transition-transform">
+                Start Training
+            </button>
+</div>
+</nav>
+<section class="relative px-6 pt-12 pb-24 overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="text-[10px] font-mono tracking-widest text-slate-500 dark:text-white/50 uppercase">Ultra-Premium v4 / High Performance</span>
+</div>
+<h1 class="font-display text-6xl md:text-8xl italic-heading mb-6 leading-none">
+                Strength<span class="text-primary">.</span>
+</h1>
+<p class="text-slate-600 dark:text-white/60 text-sm leading-relaxed max-w-xs mb-10">
+                The next evolution of human performance. Experience training protocols once reserved for elite athletes, delivered with surgical precision.
+            </p>
+<div class="flex flex-col gap-4">
+<button class="bg-primary text-black font-display text-xs py-4 px-8 uppercase hover:opacity-90 transition-opacity">
+                    Access Elite Pass
+                </button>
+<button class="border border-slate-300 dark:border-white/20 text-slate-900 dark:text-white font-display text-xs py-4 px-8 uppercase hover:bg-white/5 transition-colors">
+                    Explore Systems
+                </button>
+</div>
+</div>
+<div class="mt-12 relative">
+<div class="absolute -left-4 top-0 w-1 h-full bg-primary"></div>
+<div class="aspect-[4/5] bg-slate-200 dark:bg-zinc-900 overflow-hidden">
+<img alt="Athlete sprinting" class="w-full h-full object-cover grayscale contrast-125 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhRiIu1BRoqAfSspPp1yvEg0mklMhHMyyoviE2k6CFEAQheAPKExEFjTz05uFD5DWa3krl0wa9DxS79rSWNgHlKIQ2pJFfTlkqz30uw37DeSifkU13vxOZf1PdUDvQE15o18APYyqQxRTEBijiOO6H18iAj3kp91xkAD6xpJ4iUbDZOXderhu_YkWzQzTc-34_0_IpFnuQjRpE8TBVr3SAzFg9WowfdsAQ2sockKtalmgJXJdTkQ5dV7vorEeFjow0foooeJUKlHOc"/>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-slate-100 dark:bg-[#080808]">
+<div class="text-center mb-16">
+<span class="text-[10px] font-mono tracking-[0.3em] text-primary uppercase block mb-4">The Investment</span>
+<h2 class="font-display text-4xl italic-heading">Elite Memberships</h2>
+</div>
+<div class="space-y-8">
+<div class="bg-white dark:bg-card-dark border border-slate-200 dark:border-white/5 p-8 relative overflow-hidden group">
+<span class="text-[10px] font-mono text-slate-400 dark:text-white/30 uppercase block mb-2">Foundation</span>
+<h3 class="font-display text-2xl italic mb-6">CORE</h3>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-4xl font-display italic">$299</span>
+<span class="text-xs text-slate-400 dark:text-white/40 uppercase">/mo</span>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-xs text-slate-600 dark:text-white/70">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Standard Performance Lab Access
+                    </li>
+<li class="flex items-center gap-3 text-xs text-slate-600 dark:text-white/70">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Digital Biometric Tracking
+                    </li>
+<li class="flex items-center gap-3 text-xs text-slate-600 dark:text-white/70">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Elite Community Access
+                    </li>
+</ul>
+<button class="w-full border border-slate-200 dark:border-white/10 py-4 text-[10px] font-display uppercase tracking-widest hover:bg-primary hover:text-black transition-all">
+                    Select Plan
+                </button>
+</div>
+<div class="bg-white dark:bg-card-dark border-2 border-primary p-8 relative overflow-hidden shadow-[0_0_30px_rgba(217,255,0,0.1)]">
+<div class="absolute top-0 right-0 bg-primary text-black text-[8px] font-display px-3 py-1 uppercase">Most Popular</div>
+<span class="text-[10px] font-mono text-primary uppercase block mb-2">Elite Protocol</span>
+<h3 class="font-display text-2xl italic mb-6">PREMIUM</h3>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-4xl font-display italic">$599</span>
+<span class="text-xs text-slate-400 dark:text-white/40 uppercase">/mo</span>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-xs text-slate-900 dark:text-white font-semibold">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Full Performance Lab Access
+                    </li>
+<li class="flex items-center gap-3 text-xs text-slate-900 dark:text-white font-semibold">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1-on-1 Biometric Review
+                    </li>
+<li class="flex items-center gap-3 text-xs text-slate-900 dark:text-white font-semibold">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Advanced Hypertrophy Protocols
+                    </li>
+</ul>
+<button class="w-full bg-primary text-black py-4 text-[10px] font-display uppercase tracking-widest hover:scale-[1.02] transition-transform">
+                    Select Plan
+                </button>
+</div>
+<div class="bg-white dark:bg-card-dark border border-slate-200 dark:border-white/5 p-8 relative overflow-hidden">
+<span class="text-[10px] font-mono text-slate-400 dark:text-white/30 uppercase block mb-2">Absolute Control</span>
+<h3 class="font-display text-2xl italic mb-6">BLACK</h3>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-4xl font-display italic">$999</span>
+<span class="text-xs text-slate-400 dark:text-white/40 uppercase">/mo</span>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-xs text-slate-600 dark:text-white/70">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> 24/7 Concierge Performance
+                    </li>
+<li class="flex items-center gap-3 text-xs text-slate-600 dark:text-white/70">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Custom Nutritional Bio-Design
+                    </li>
+</ul>
+<button class="w-full border border-slate-200 dark:border-white/10 py-4 text-[10px] font-display uppercase tracking-widest hover:bg-primary hover:text-black transition-all">
+                    Select Plan
+                </button>
+</div>
+</div>
+</section>
+<section class="px-6 py-24">
+<div class="text-center mb-16">
+<span class="text-[10px] font-mono tracking-[0.3em] text-primary uppercase block mb-4">Glory Awaits</span>
+<h2 class="font-display text-3xl italic-heading mb-4 leading-tight">Championship Prizes</h2>
+<p class="text-xs text-slate-500 dark:text-white/40 max-w-xs mx-auto">Surpass your limits and claim the ultimate recognition. Elite performance deserves elite rewards.</p>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="bg-slate-50 dark:bg-white/[0.03] p-8 border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">trophy</span>
+<h4 class="font-display text-sm italic uppercase mb-1">Alpha Predator</h4>
+<p class="text-[10px] font-mono text-slate-400 dark:text-white/30 uppercase mb-4 tracking-tighter">Top Strength Metric</p>
+<p class="text-xs text-slate-600 dark:text-white/60">The ultimate titanium trophy + 1-year free Black Membership.</p>
+</div>
+<div class="bg-slate-50 dark:bg-white/[0.03] p-8 border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">military_tech</span>
+<h4 class="font-display text-sm italic uppercase mb-1">Metabolic God</h4>
+<p class="text-[10px] font-mono text-slate-400 dark:text-white/30 uppercase mb-4 tracking-tighter">VO2 Max Champion</p>
+<p class="text-xs text-slate-600 dark:text-white/60">Bespoke carbon fiber commemorative plate + Tech Bundle.</p>
+</div>
+</div>
+</section>
+<section class="px-6 py-24 bg-slate-100 dark:bg-zinc-950">
+<div class="mb-12">
+<span class="text-[10px] font-mono tracking-[0.3em] text-primary uppercase block mb-4">Command Center</span>
+<h2 class="font-display text-5xl italic-heading leading-none">Reach the Peak</h2>
+</div>
+<div class="space-y-12">
+<div class="aspect-square bg-slate-200 dark:bg-card-dark relative overflow-hidden rounded-lg border border-slate-300 dark:border-white/10">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<div class="w-full h-full" style="background-image: radial-gradient(circle, #D9FF00 1px, transparent 1px); background-size: 20px 20px;"></div>
+</div>
+<div class="absolute top-4 left-4 bg-background-light dark:bg-background-dark border border-slate-300 dark:border-white/20 p-2">
+<p class="text-[8px] font-mono uppercase text-slate-400 dark:text-white/40">Main Grid Terminal</p>
+<p class="text-[10px] font-display italic">GENESIS HQ / NY</p>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 rounded-full animate-ping"></div>
+<div class="relative bg-primary p-2 rounded-full shadow-[0_0_20px_#D9FF00]">
+<span class="material-symbols-outlined text-black text-xl">location_on</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 flex flex-col gap-2">
+<button class="bg-white dark:bg-white/10 p-2 border border-slate-300 dark:border-white/10"><span class="material-symbols-outlined text-sm">add</span></button>
+<button class="bg-white dark:bg-white/10 p-2 border border-slate-300 dark:border-white/10"><span class="material-symbols-outlined text-sm">remove</span></button>
+</div>
+</div>
+<div class="space-y-8">
+<div>
+<span class="text-[8px] font-mono text-slate-400 dark:text-white/30 uppercase tracking-widest block mb-4">— Secure Voice Line</span>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 flex items-center justify-center border border-slate-300 dark:border-white/10 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<span class="text-2xl font-display italic">+1 555-000-FIT</span>
+</div>
+</div>
+<div>
+<span class="text-[8px] font-mono text-slate-400 dark:text-white/30 uppercase tracking-widest block mb-4">— Encrypted Transmission</span>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 flex items-center justify-center border border-slate-300 dark:border-white/10 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<span class="text-xl font-display italic lowercase">elite@fitclub.com</span>
+</div>
+</div>
+<div>
+<span class="text-[8px] font-mono text-slate-400 dark:text-white/30 uppercase tracking-widest block mb-4">— Physical Sector</span>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-slate-300 dark:border-white/10">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<span class="text-sm font-display italic uppercase">742 Performance Way,<br/>Manhattan, NY 10001</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-12 border-t border-slate-300 dark:border-white/10 flex flex-col gap-6">
+<button class="w-full bg-primary text-black font-display text-xs py-5 uppercase tracking-widest">
+                Book a Site Tour
+            </button>
+<button class="w-full flex items-center justify-center gap-2 text-slate-400 dark:text-white/40 font-mono text-[10px] uppercase tracking-widest hover:text-white transition-colors">
+                Download Protocol PDF <span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+</section>
+<footer class="px-6 py-20 border-t border-slate-200 dark:border-white/5">
+<div class="flex flex-col gap-12">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary fill-current">bolt</span>
+<span class="font-display text-2xl uppercase tracking-tighter italic">The Fit Club</span>
+</div>
+<p class="text-xs text-slate-400 dark:text-white/30 leading-relaxed max-w-[240px]">
+                    Architecting the future of human performance through science-driven training and elite technological integration.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-10">
+<div class="space-y-4">
+<h5 class="text-[10px] font-mono text-primary uppercase tracking-widest">Protocols</h5>
+<ul class="space-y-2 text-[10px] font-display uppercase italic text-slate-600 dark:text-white/60">
+<li><a class="hover:text-primary transition-colors" href="#">Hypertrophy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Anaerobic</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Functional</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-[10px] font-mono text-primary uppercase tracking-widest">Social</h5>
+<ul class="space-y-2 text-[10px] font-display uppercase italic text-slate-600 dark:text-white/60">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Youtube</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-200 dark:border-white/5 flex flex-col gap-4 text-[8px] font-mono text-slate-400 dark:text-white/20 uppercase tracking-widest">
+<p>© 2024 THE FIT CLUB. HIGH PERFORMANCE BIOMETRICS INTEGRATED.</p>
+<div class="flex gap-4">
+<a class="hover:text-white" href="#">Privacy</a>
+<a class="hover:text-white" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
