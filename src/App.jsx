@@ -5,14 +5,20 @@ import Prizes from './components/Prizes';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import System from './components/System';
+import OurTeam from './components/OurTeam';
+import Testimonials from './components/Testimonials';
+import FQA from './components/FQA';
 
 function App() {
   return (
     <div className="h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-body selection:bg-primary selection:text-black">
       <Navbar />
       <Hero />
+      <OurTeam />
       <Memberships />
+      <Testimonials />
       <Prizes />
+      <FQA />
       <Contact />
       <System />
       <Footer />

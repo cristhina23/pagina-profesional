@@ -1,15 +1,24 @@
 import { motion } from "framer-motion";
 import { Section, Container } from "./ui/Layout";
 import { Button } from "./ui/Button";
+import { SectionHeading, SectionSubheading } from "./ui/Typography";
 
 export default function Contact() {
   return (
     <Section className="bg-background-dark">
-      <Container>
-        {/* MAP + RADAR */}
+
+      <div className="text-center pb-8 ">
+        <SectionHeading className="text-4xl pb-2 text-primary " >Contact Us</SectionHeading>
+        <p>Get in touch with us to learn more about our services and how we can help you reach your fitness goals.</p>
+      </div>
+      <Container className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-10 md:gap-16">
+
+
+       <div className="h-[420px] sm:h-[460px] md:h-[520px]">
+         {/* MAP + RADAR */}
         <motion.div
           whileHover={{ scale: 1.02 }}
-          className="relative w-full h-[520px] bg-white/5 overflow-hidden rounded-lg border border-white/10 backdrop-blur-md"
+          className="relative w-full h-full bg-white/5 overflow-hidden rounded-lg border border-white/10 backdrop-blur-md"
         >
           <iframe
             title="Ubicación"
@@ -56,8 +65,11 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        {/* FORM */}
-        <form className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-md">
+       </div>
+
+       <div className="h-[420px] sm:h-[460px] md:h-[520px]">
+         {/* FORM */}
+        <form className="h-full flex flex-col justify-between bg-card-dark p-8 rounded-lg gap-6 shadow-lg border border-white/10 backdrop-blur-md" >
           <div>
             <label className="block text-[10px] font-mono uppercase mb-2 text-white/40">
               Name
@@ -80,7 +92,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className="md:col-span-2">
+          <div>
             <label className="block text-[10px] font-mono uppercase mb-2 text-white/40">
               Message
             </label>
@@ -91,41 +103,14 @@ export default function Contact() {
             />
           </div>
 
-          <div className="md:col-span-2">
+          <div>
             <Button className="w-full py-4">Send Transmission</Button>
           </div>
         </form>
+       </div>
 
-        {/* CONTACT INFO */}
-        <div className="space-y-12 mt-16">
-          <ContactItem
-            icon="call"
-            label="Secure Voice Line"
-            value="+1 555-000-FIT"
-          />
-          <ContactItem
-            icon="mail"
-            label="Encrypted Transmission"
-            value="elite@fitclub.com"
-            isEmail
-          />
-          <ContactItem
-            icon="location_on"
-            label="Physical Sector"
-            value="742 Performance Way, Manhattan, NY 10001"
-          />
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16 pt-12 border-t border-slate-300 dark:border-white/10 flex flex-col gap-6">
-          <Button className="w-full py-5">Book a Site Tour</Button>
-          <button className="w-full flex items-center justify-center gap-2 text-slate-400 dark:text-white/40 font-mono text-[10px] uppercase tracking-widest hover:text-white transition-colors">
-            Download Protocol PDF
-            <span className="material-symbols-outlined text-sm">
-              download
-            </span>
-          </button>
-        </div>
+        
+       
       </Container>
     </Section>
   );

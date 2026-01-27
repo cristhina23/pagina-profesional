@@ -20,7 +20,11 @@ export default function Memberships() {
 
     return (
         <Section className="bg-transparent relative">
-            <div className="absolute top-1/2 left-0 w-full h-full bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none -z-10" />
+            {/* Ambient Background Glows (subtle + responsive) */}
+            <div className="hidden sm:block absolute -top-24 right-[-60px] w-[240px] h-[240px] md:w-[360px] md:h-[360px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+            <div className="hidden md:block absolute -bottom-24 left-[-80px] w-[260px] h-[260px] lg:w-[340px] lg:h-[340px] bg-neon-cyan/10 blur-[110px] rounded-full pointer-events-none -z-10" />
+            {/* Soft vertical gradient to anchor cards */}
+            <div className="absolute inset-x-0 top-1/3 h-1/2 bg-gradient-to-b from-transparent via-primary/10 to-transparent opacity-60 md:opacity-80 pointer-events-none -z-10" />
 
             <Container>
                 <div className="text-center mb-16">
@@ -33,9 +37,9 @@ export default function Memberships() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="flex justify-between items-stretch gap-8"
+                    className="w-full flex flex-col md:flex-row justify-center items-center mx-auto  gap-4"
                 >
-                    <Card variants={item} className="w-1/4">
+                    <Card variants={item} className="md:w-1/4">
                         <Text variant="mono" className="mb-2">Foundation</Text>
                         <Text variant="mono" className="mb-2">Foundation</Text>
                         <h3 className="font-display text-2xl italic mb-6 text-white">CORE</h3>
@@ -54,7 +58,7 @@ export default function Memberships() {
                         <Button variant="outline" className="w-full">Select Plan</Button>
                     </Card>
 
-                    <Card variants={item} border="primary" className="w-1/3">
+                    <Card variants={item} border="primary" className="md:w-1/3">
                         <div className="absolute top-0 right-0 bg-primary text-black text-[8px] font-display px-3 py-1 uppercase">
                             Most Popular
                         </div>
@@ -76,7 +80,7 @@ export default function Memberships() {
                         <Button variant="primary" className="w-full">Select Plan</Button>
                     </Card>
 
-                    <Card variants={item} className="w-1/4">
+                    <Card variants={item} className="md:w-1/4">
                         <Text variant="mono" className="mb-2">Absolute Control</Text>
                         <Text variant="mono" className="mb-2">Absolute Control</Text>
                         <h3 className="font-display text-2xl italic mb-6 text-white">BLACK</h3>
