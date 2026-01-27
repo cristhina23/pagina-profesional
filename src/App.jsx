@@ -8,7 +8,7 @@ import System from './components/System';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-body selection:bg-primary selection:text-black">
+    <div className="h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-body selection:bg-primary selection:text-black">
       <Navbar />
       <Hero />
       <Memberships />

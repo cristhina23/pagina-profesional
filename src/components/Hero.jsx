@@ -26,7 +26,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4, duration: 0.8 }}
-                            className="font-display text-7xl md:text-9xl italic-heading mb-8 leading-[0.9] tracking-tighter"
+                            className="font-display text-4xl md:text-8xl italic-heading mb-8 leading-[0.9] tracking-tighter "
                         >
                             Stren<span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">gth</span>
                             <span className="text-primary text-glow">.</span>
