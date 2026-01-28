@@ -3,7 +3,7 @@ import { Section, Container } from "./ui/Layout";
 
 export default function Systems() {
   return (
-    <Section className="bg-background-dark">
+    <Section className="bg-background-dark overflow-visible">
       <Container>
         <div className="border border-white/10 bg-white/5 backdrop-blur-md rounded-lg p-10">
           
@@ -26,6 +26,10 @@ export default function Systems() {
 
         </div>
       </Container>
+
+      {/* Edge blend to smooth transitions (unified) */}
+      <div className="absolute inset-x-0 -top-16 h-28 bg-gradient-to-b from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
+      <div className="absolute inset-x-0 -bottom-16 h-28 bg-gradient-to-t from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
     </Section>
   );
 }

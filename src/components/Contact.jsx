@@ -5,12 +5,16 @@ import { SectionHeading, SectionSubheading } from "./ui/Typography";
 
 export default function Contact() {
   return (
-    <Section className="bg-background-dark">
+    <Section className="bg-background-dark overflow-visible">
 
       <div className="text-center pb-8 ">
         <SectionHeading className="text-4xl pb-2 text-primary " >Contact Us</SectionHeading>
         <p>Get in touch with us to learn more about our services and how we can help you reach your fitness goals.</p>
       </div>
+      {/* Edge blend to smooth transitions (unified) */}
+      <div className="absolute inset-x-0 -top-16 h-28 bg-gradient-to-b from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
+      <div className="absolute inset-x-0 -bottom-16 h-28 bg-gradient-to-t from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
+
       <Container className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-10 md:gap-16">
 
 

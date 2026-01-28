@@ -46,11 +46,15 @@ export default function OurTeam() {
 	};
 
 	return (
-		<Section className="relative bg-transparent pt-16 md:pt-24">
+		<Section className="relative bg-transparent pt-16 md:pt-24 overflow-visible">
 			{/* Ambient background and soft gradient */}
-			<div className="hidden md:block absolute -top-24 left-[-80px] w-[320px] h-[320px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
-			<div className="hidden lg:block absolute -bottom-24 right-[-100px] w-[360px] h-[360px] bg-neon-cyan/10 blur-[120px] rounded-full pointer-events-none -z-10" />
+			<div className="hidden md:block absolute -top-24 left-[-100px] w-[520px] h-[520px] bg-primary/12 blur-[140px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+			<div className="hidden lg:block absolute -bottom-24 right-[-100px] w-[520px] h-[520px] bg-neon-cyan/10 blur-[140px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
 			<div className="absolute inset-x-0 top-1/4 h-1/2 bg-gradient-to-b from-transparent via-primary/5 to-transparent opacity-70 pointer-events-none -z-10" />
+
+			{/* Edge blend to smooth transitions */}
+			<div className="absolute inset-x-0 -top-16 h-28 bg-gradient-to-b from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
+			<div className="absolute inset-x-0 -bottom-16 h-28 bg-gradient-to-t from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
 
 			<Container>
 				<div className="mb-10 md:mb-16">

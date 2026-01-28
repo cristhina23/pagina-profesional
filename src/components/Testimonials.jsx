@@ -125,9 +125,13 @@ export default function Testimonials() {
 	};
 
 	return (
-		<Section className="relative">
+		<Section className="relative overflow-visible">
 			{/* Ambient glow background */}
-			<div className="hidden md:block absolute -top-16 right-[-60px] w-[280px] h-[280px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+			<div className="hidden md:block absolute -top-24 right-[-100px] w-[520px] h-[520px] bg-primary/12 blur-[140px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+
+			{/* Edge blend to smooth transitions */}
+			<div className="absolute inset-x-0 -top-16 h-28 bg-gradient-to-b from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
+			<div className="absolute inset-x-0 -bottom-16 h-28 bg-gradient-to-t from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
 
 			<Container>
 				<div className="mb-12 text-center">

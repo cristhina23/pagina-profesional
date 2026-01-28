@@ -4,11 +4,14 @@ import { Section, Container } from "./ui/Layout";
 
 export default function Hero() {
   return (
-    <Section className="pt-10 md:pt-14 pb-24 md:pb-32 px-2 md:px-12 overflow-hidden">
+        <Section className="pt-10 md:pt-14 pb-24 md:pb-32 px-2 md:px-12 overflow-visible">
       <Container >
-                {/* Ambient Background Glow */}
-                <div className="hidden md:block absolute top-0 right-0 w-[400px] md:w-[500px] h-[400px] md:h-[500px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
-                <div className="hidden md:block absolute bottom-0 left-0 w-[240px] md:w-[300px] h-[240px] md:h-[300px] bg-neon-cyan/10 blur-[100px] rounded-full pointer-events-none -z-10" />
+                {/* Ambient Background Glows (unified profile) */}
+                <div className="hidden md:block absolute -top-24 right-[-100px] w-[520px] h-[520px] bg-primary/12 blur-[140px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+                <div className="hidden md:block absolute -bottom-24 left-[-100px] w-[520px] h-[520px] bg-neon-cyan/10 blur-[140px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+                {/* Edge blend to smooth color transitions with adjacent sections (unified) */}
+                <div className="absolute inset-x-0 -top-16 h-28 bg-gradient-to-b from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
+                <div className="absolute inset-x-0 -bottom-16 h-28 bg-gradient-to-t from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
 
                 <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
                     <div>

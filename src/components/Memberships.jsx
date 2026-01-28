@@ -19,12 +19,16 @@ export default function Memberships() {
     };
 
     return (
-        <Section className="bg-transparent relative">
+        <Section className="bg-transparent relative overflow-visible">
             {/* Ambient Background Glows (subtle + responsive) */}
-            <div className="hidden sm:block absolute -top-24 right-[-60px] w-[240px] h-[240px] md:w-[360px] md:h-[360px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
-            <div className="hidden md:block absolute -bottom-24 left-[-80px] w-[260px] h-[260px] lg:w-[340px] lg:h-[340px] bg-neon-cyan/10 blur-[110px] rounded-full pointer-events-none -z-10" />
+            <div className="hidden md:block absolute -top-24 right-[-100px] w-[520px] h-[520px] bg-primary/12 blur-[140px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+            <div className="hidden md:block absolute -bottom-24 left-[-100px] w-[520px] h-[520px] bg-neon-cyan/10 blur-[140px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
             {/* Soft vertical gradient to anchor cards */}
             <div className="absolute inset-x-0 top-1/3 h-1/2 bg-gradient-to-b from-transparent via-primary/10 to-transparent opacity-60 md:opacity-80 pointer-events-none -z-10" />
+
+            {/* Edge blend to smooth transitions */}
+            <div className="absolute inset-x-0 -top-16 h-28 bg-gradient-to-b from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
+            <div className="absolute inset-x-0 -bottom-16 h-28 bg-gradient-to-t from-primary/12 via-primary/6 to-transparent opacity-60 pointer-events-none -z-10 mix-blend-screen" />
 
             <Container>
                 <div className="text-center mb-16">
