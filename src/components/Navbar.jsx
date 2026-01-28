@@ -30,6 +30,7 @@ export default function Navbar() {
                     </span>
                 </div>
                 </a>
+                
                 <div className="flex items-center gap-4">
                     {/* <ThemeToggle /> */}
                     <Button size="sm" className="rounded-none clip-path-slant bg-primary text-black hover:bg-white transition-colors duration-300">
